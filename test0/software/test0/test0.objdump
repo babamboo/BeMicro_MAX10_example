@@ -1,0 +1,2223 @@
+
+test0.elf:     file format elf32-littlenios2
+test0.elf
+architecture: nios2, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00040020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00000000 memsz 0x00000000 flags r-x
+    LOAD off    0x00001020 vaddr 0x00040020 paddr 0x00040020 align 2**12
+         filesz 0x00000d40 memsz 0x00000d50 flags rwx
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000000  00000000  00000000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000000  00040020  00040020  00001d60  2**0
+                  CONTENTS
+  2 .text         00000c10  00040020  00040020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       0000001c  00040c30  00040c30  00001c30  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rwdata       00000114  00040c4c  00040c4c  00001c4c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          00000010  00040d60  00040d60  00001d60  2**2
+                  ALLOC, SMALL_DATA
+  6 .onchip_flash_0_data 00000000  00000020  00000020  00001d60  2**0
+                  CONTENTS
+  7 .onchip_memory2_0 00000000  00040d70  00040d70  00001d60  2**0
+                  CONTENTS
+  8 .comment      00000039  00000000  00000000  00001d60  2**0
+                  CONTENTS, READONLY
+  9 .debug_aranges 00000250  00000000  00000000  00001da0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_info   00002754  00000000  00000000  00001ff0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_abbrev 00000f17  00000000  00000000  00004744  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_line   00001219  00000000  00000000  0000565b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_frame  00000438  00000000  00000000  00006874  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_str    00000dcc  00000000  00000000  00006cac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_loc    000011d3  00000000  00000000  00007a78  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_alt_sim_info 00000040  00000000  00000000  00008c4c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_ranges 00000048  00000000  00000000  00008c8c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .thread_model 00000003  00000000  00000000  00009dd4  2**0
+                  CONTENTS, READONLY
+ 19 .cpu          00000005  00000000  00000000  00009dd7  2**0
+                  CONTENTS, READONLY
+ 20 .qsys         00000001  00000000  00000000  00009ddc  2**0
+                  CONTENTS, READONLY
+ 21 .simulation_enabled 00000001  00000000  00000000  00009ddd  2**0
+                  CONTENTS, READONLY
+ 22 .stderr_dev   0000000b  00000000  00000000  00009dde  2**0
+                  CONTENTS, READONLY
+ 23 .stdin_dev    0000000b  00000000  00000000  00009de9  2**0
+                  CONTENTS, READONLY
+ 24 .stdout_dev   0000000b  00000000  00000000  00009df4  2**0
+                  CONTENTS, READONLY
+ 25 .sopc_system_name 00000005  00000000  00000000  00009dff  2**0
+                  CONTENTS, READONLY
+ 26 .quartus_project_dir 0000000d  00000000  00000000  00009e04  2**0
+                  CONTENTS, READONLY
+ 27 .jdi          00004860  00000000  00000000  00009e11  2**0
+                  CONTENTS, READONLY
+ 28 .sopcinfo     000422db  00000000  00000000  0000e671  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l    d  .entry	00000000 .entry
+00040020 l    d  .exceptions	00000000 .exceptions
+00040020 l    d  .text	00000000 .text
+00040c30 l    d  .rodata	00000000 .rodata
+00040c4c l    d  .rwdata	00000000 .rwdata
+00040d60 l    d  .bss	00000000 .bss
+00000020 l    d  .onchip_flash_0_data	00000000 .onchip_flash_0_data
+00040d70 l    d  .onchip_memory2_0	00000000 .onchip_memory2_0
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../test0_bsp//obj/HAL/src/crt0.o
+00040054 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 hello_world_small.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_usleep.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00040c4c l     O .rwdata	000000fc onchip_flash_0
+00000000 l    df *ABS*	00000000 altera_onchip_flash.c
+00000000 l    df *ABS*	00000000 alt_busy_sleep.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush.c
+00000000 l    df *ABS*	00000000 alt_dev_llist_insert.c
+00000000 l    df *ABS*	00000000 alt_errno.c
+00000000 l    df *ABS*	00000000 alt_flash_dev.c
+00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
+00000000 l    df *ABS*	00000000 alt_find_dev.c
+00000000 l    df *ABS*	00000000 int_errno.c
+00000000 l    df *ABS*	00000000 memcmp.c
+00000000 l    df *ABS*	00000000 memcpy.c
+00000000 l    df *ABS*	00000000 strlen.c
+00000000 l    df *ABS*	00000000 lib2-divmod.c
+00040af4 l     F .text	00000070 udivmodsi4
+00000000 l    df *ABS*	00000000 lib2-mul.c
+000400a0 g     F .text	0000002c alt_main
+00040a04 g     F .text	00000008 altera_nios2_gen2_irq_init
+00000000  w      *UND*	00000000 __errno
+00000000 g     F .entry	00000000 __reset
+00040d6c g     O .bss	00000004 errno
+00040d64 g     O .bss	00000004 alt_argv
+00048d48 g       *ABS*	00000000 _gp
+000400cc g     F .text	00000004 usleep
+000406a4 g     F .text	00000030 alt_onchip_flash_poll_for_status_write_passed
+00040a0c g     F .text	00000074 alt_find_dev
+00040ab0 g     F .text	00000028 memcpy
+00000000 g       *ABS*	00000000 __alt_mem_onchip_flash_0_data
+00040000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
+00040bf8 g     F .text	00000008 .hidden __udivsi3
+0004059c g     F .text	00000030 alt_onchip_flash_poll_for_status_erase_passed
+00040d4c g     O .rwdata	00000008 altera_onchip_flash_list
+00040924 g     F .text	00000004 alt_dcache_flush
+000405cc g     F .text	000000d8 alt_onchip_flash_erase_block
+00040d70 g       *ABS*	00000000 __bss_end
+00040d48 g     O .rwdata	00000004 jtag_uart_0
+00040c00 g     F .text	00000008 .hidden __umodsi3
+00040d70 g       *ABS*	00000000 end
+00041000 g       *ABS*	00000000 __alt_stack_pointer
+00040168 g     F .text	00000044 alt_onchip_flash_get_info
+00040020 g     F .text	00000038 _start
+000400f0 g     F .text	0000000c alt_sys_init
+00040c08 g     F .text	00000028 .hidden __mulsi3
+0004089c g     F .text	00000088 alt_busy_sleep
+00040a80 g     F .text	00000030 memcmp
+00040d70 g       *ABS*	00000000 __alt_stack_base
+000400fc g     F .text	0000006c alt_onchip_flash_read
+00040928 g     F .text	00000078 alt_dev_llist_insert
+00040d58 g     O .rwdata	00000008 alt_flash_dev_list
+00040d60 g       *ABS*	00000000 __bss_start
+00040058 g     F .text	00000048 main
+00040d60 g     O .bss	00000004 alt_envp
+00040d54 g     O .rwdata	00000004 alt_errno
+0004056c g     F .text	00000030 alt_onchip_flash_poll_for_status_to_go_idle
+00040b64 g     F .text	00000048 .hidden __divsi3
+00040328 g     F .text	00000244 altera_onchip_flash_init
+000400d0 g     F .text	00000020 alt_irq_init
+00040d68 g     O .bss	00000004 alt_argc
+000406d4 g     F .text	000001c8 alt_onchip_flash_write_block
+00040d60 g       *ABS*	00000000 _edata
+000401ac g     F .text	0000017c alt_onchip_flash_write
+00040d70 g       *ABS*	00000000 _end
+000409a0 g     F .text	00000050 alt_flash_open_dev
+000409f0 g     F .text	00000014 alt_flash_close_dev
+00040bac g     F .text	0000004c .hidden __modsi3
+00041000 g       *ABS*	00000000 __alt_data_end
+00000000 g       .entry	00000000 _exit
+00040ad8 g     F .text	0000001c strlen
+
+
+
+Disassembly of section .text:
+
+00040020 <_start>:
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+   40020:	06c00134 	movhi	sp,4
+    ori sp, sp, %lo(__alt_stack_pointer)
+   40024:	dec40014 	ori	sp,sp,4096
+    movhi gp, %hi(_gp)
+   40028:	06800134 	movhi	gp,4
+    ori gp, gp, %lo(_gp)
+   4002c:	d6a35214 	ori	gp,gp,36168
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+   40030:	00800134 	movhi	r2,4
+    ori r2, r2, %lo(__bss_start)
+   40034:	10835814 	ori	r2,r2,3424
+
+    movhi r3, %hi(__bss_end)
+   40038:	00c00134 	movhi	r3,4
+    ori r3, r3, %lo(__bss_end)
+   4003c:	18c35c14 	ori	r3,r3,3440
+
+    beq r2, r3, 1f
+   40040:	10c00326 	beq	r2,r3,40050 <_start+0x30>
+
+0:
+    stw zero, (r2)
+   40044:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+   40048:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+   4004c:	10fffd36 	bltu	r2,r3,40044 <_gp+0xffff72fc>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+   40050:	00400a00 	call	400a0 <alt_main>
+
+00040054 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+   40054:	003fff06 	br	40054 <_gp+0xffff730c>
+
+00040058 <main>:
+#include "sys/alt_stdio.h"
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+int main()
+{ 
+   40058:	defffc04 	addi	sp,sp,-16
+   4005c:	dc800215 	stw	r18,8(sp)
+   40060:	dc400115 	stw	r17,4(sp)
+   40064:	dc000015 	stw	r16,0(sp)
+   40068:	dfc00315 	stw	ra,12(sp)
+	while(1) {
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 0x55);
+   4006c:	04801544 	movi	r18,85
+   40070:	040001f4 	movhi	r16,7
+   40074:	84200004 	addi	r16,r16,-32768
+		usleep(500000);
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 0xaa);
+   40078:	04402a84 	movi	r17,170
+#include "altera_avalon_pio_regs.h"
+
+int main()
+{ 
+	while(1) {
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 0x55);
+   4007c:	84800035 	stwio	r18,0(r16)
+		usleep(500000);
+   40080:	01000234 	movhi	r4,8
+   40084:	21284804 	addi	r4,r4,-24288
+   40088:	00400cc0 	call	400cc <usleep>
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 0xaa);
+   4008c:	84400035 	stwio	r17,0(r16)
+		usleep(500000);
+   40090:	01000234 	movhi	r4,8
+   40094:	21284804 	addi	r4,r4,-24288
+   40098:	00400cc0 	call	400cc <usleep>
+   4009c:	003ff706 	br	4007c <_gp+0xffff7334>
+
+000400a0 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+   400a0:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+   400a4:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+   400a8:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+   400ac:	00400d00 	call	400d0 <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+   400b0:	00400f00 	call	400f0 <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+   400b4:	d1200817 	ldw	r4,-32736(gp)
+   400b8:	d1600717 	ldw	r5,-32740(gp)
+   400bc:	d1a00617 	ldw	r6,-32744(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+   400c0:	dfc00017 	ldw	ra,0(sp)
+   400c4:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+   400c8:	00400581 	jmpi	40058 <main>
+
+000400cc <usleep>:
+int ALT_USLEEP (useconds_t us)
+#else
+unsigned int ALT_USLEEP (unsigned int us)
+#endif
+{
+  return alt_busy_sleep(us);
+   400cc:	004089c1 	jmpi	4089c <alt_busy_sleep>
+
+000400d0 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+   400d0:	deffff04 	addi	sp,sp,-4
+   400d4:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_GEN2_IRQ_INIT ( NIOS2, nios2);
+   400d8:	0040a040 	call	40a04 <altera_nios2_gen2_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts ()
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+   400dc:	00800044 	movi	r2,1
+   400e0:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+   400e4:	dfc00017 	ldw	ra,0(sp)
+   400e8:	dec00104 	addi	sp,sp,4
+   400ec:	f800283a 	ret
+
+000400f0 <alt_sys_init>:
+ */
+
+void alt_sys_init( void )
+{
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
+    ALTERA_ONCHIP_FLASH_INIT ( ONCHIP_FLASH_0, onchip_flash_0);
+   400f0:	01000134 	movhi	r4,4
+   400f4:	21031304 	addi	r4,r4,3148
+   400f8:	00403281 	jmpi	40328 <altera_onchip_flash_init>
+
+000400fc <alt_onchip_flash_read>:
+{
+    int ret_code = 0;
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || ((offset+length) > flash->dev.length)) {
+   400fc:	20800b17 	ldw	r2,44(r4)
+    alt_flash_dev *flash_info,
+    int           offset,
+    void          *dest_addr,
+    int           length
+)
+{
+   40100:	defffe04 	addi	sp,sp,-8
+   40104:	dc000015 	stw	r16,0(sp)
+   40108:	dfc00115 	stw	ra,4(sp)
+   4010c:	2021883a 	mov	r16,r4
+    int ret_code = 0;
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || ((offset+length) > flash->dev.length)) {
+   40110:	2880100e 	bge	r5,r2,40154 <alt_onchip_flash_read+0x58>
+   40114:	29c7883a 	add	r3,r5,r7
+   40118:	10c00e16 	blt	r2,r3,40154 <alt_onchip_flash_read+0x58>
+        return -EFAULT;
+    }
+    
+    memcpy(dest_addr, (alt_u8*)flash->dev.base_addr+offset, length);
+   4011c:	80800a17 	ldw	r2,40(r16)
+   40120:	3009883a 	mov	r4,r6
+   40124:	380d883a 	mov	r6,r7
+   40128:	114b883a 	add	r5,r2,r5
+   4012c:	0040ab00 	call	40ab0 <memcpy>
+
+    if (NULL != flash->csr_base) {
+   40130:	80802e17 	ldw	r2,184(r16)
+   40134:	1000021e 	bne	r2,zero,40140 <alt_onchip_flash_read+0x44>
+    int           offset,
+    void          *dest_addr,
+    int           length
+)
+{
+    int ret_code = 0;
+   40138:	0005883a 	mov	r2,zero
+   4013c:	00000606 	br	40158 <alt_onchip_flash_read+0x5c>
+    }
+    
+    memcpy(dest_addr, (alt_u8*)flash->dev.base_addr+offset, length);
+
+    if (NULL != flash->csr_base) {
+        int read_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_READ_MSK;
+   40140:	10800037 	ldwio	r2,0(r2)
+   40144:	1080010c 	andi	r2,r2,4
+        if (read_status != ALTERA_ONCHIP_FLASH_STATUS_READ_PASSED) {
+   40148:	103ffb1e 	bne	r2,zero,40138 <_gp+0xffff73f0>
+            /* Read failed.  Return error.*/
+            ret_code = -EIO;
+   4014c:	00bffec4 	movi	r2,-5
+   40150:	00000106 	br	40158 <alt_onchip_flash_read+0x5c>
+    int ret_code = 0;
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || ((offset+length) > flash->dev.length)) {
+        return -EFAULT;
+   40154:	00bffc84 	movi	r2,-14
+            /* Read failed.  Return error.*/
+            ret_code = -EIO;
+        }
+    }
+    return ret_code;
+}
+   40158:	dfc00117 	ldw	ra,4(sp)
+   4015c:	dc000017 	ldw	r16,0(sp)
+   40160:	dec00204 	addi	sp,sp,8
+   40164:	f800283a 	ret
+
+00040168 <alt_onchip_flash_get_info>:
+{
+    int ret_code = 0;
+
+    alt_flash_dev* flash = (alt_flash_dev*)fd;
+
+    if (NULL != number_of_regions)
+   40168:	30000226 	beq	r6,zero,40174 <alt_onchip_flash_get_info+0xc>
+    {
+        /* Pass the number of region to user */
+        *number_of_regions = flash->number_of_regions;
+   4016c:	20800c17 	ldw	r2,48(r4)
+   40170:	30800015 	stw	r2,0(r6)
+    }
+
+    if (!flash->number_of_regions)
+   40174:	20800c17 	ldw	r2,48(r4)
+   40178:	10000626 	beq	r2,zero,40194 <alt_onchip_flash_get_info+0x2c>
+    {
+        ret_code = -ENOMEM;
+    }
+    else if (flash->number_of_regions > ALT_MAX_NUMBER_OF_FLASH_REGIONS)
+   4017c:	00c00204 	movi	r3,8
+   40180:	18800616 	blt	r3,r2,4019c <alt_onchip_flash_get_info+0x34>
+    {
+        ret_code = -EFAULT;
+    }
+    else
+    {
+        if (NULL != info)
+   40184:	28000726 	beq	r5,zero,401a4 <alt_onchip_flash_get_info+0x3c>
+        {
+            /* Pass the table of erase blocks to user */
+            *info = &flash->region_info[0];
+   40188:	21000d04 	addi	r4,r4,52
+   4018c:	29000015 	stw	r4,0(r5)
+   40190:	00000406 	br	401a4 <alt_onchip_flash_get_info+0x3c>
+        *number_of_regions = flash->number_of_regions;
+    }
+
+    if (!flash->number_of_regions)
+    {
+        ret_code = -ENOMEM;
+   40194:	00bffd04 	movi	r2,-12
+   40198:	f800283a 	ret
+    }
+    else if (flash->number_of_regions > ALT_MAX_NUMBER_OF_FLASH_REGIONS)
+    {
+        ret_code = -EFAULT;
+   4019c:	00bffc84 	movi	r2,-14
+   401a0:	f800283a 	ret
+    alt_flash_fd *fd,
+    flash_region **info,
+    int          *number_of_regions
+)
+{
+    int ret_code = 0;
+   401a4:	0005883a 	mov	r2,zero
+            *info = &flash->region_info[0];
+        }
+    }
+
+    return ret_code;
+}
+   401a8:	f800283a 	ret
+
+000401ac <alt_onchip_flash_write>:
+    int         full_length = length;
+    int         start_offset = offset;
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || (length > (flash->dev.length - offset)))
+   401ac:	20800b17 	ldw	r2,44(r4)
+    alt_flash_dev *flash_info,
+    int           offset,
+    const void    *src_addr,
+    int           length
+)
+{
+   401b0:	defff304 	addi	sp,sp,-52
+   401b4:	dd000715 	stw	r20,28(sp)
+   401b8:	dc000315 	stw	r16,12(sp)
+   401bc:	dfc00c15 	stw	ra,48(sp)
+   401c0:	df000b15 	stw	fp,44(sp)
+   401c4:	ddc00a15 	stw	r23,40(sp)
+   401c8:	dd800915 	stw	r22,36(sp)
+   401cc:	dd400815 	stw	r21,32(sp)
+   401d0:	dcc00615 	stw	r19,24(sp)
+   401d4:	dc800515 	stw	r18,20(sp)
+   401d8:	dc400415 	stw	r17,16(sp)
+   401dc:	d9c00115 	stw	r7,4(sp)
+   401e0:	2021883a 	mov	r16,r4
+   401e4:	2829883a 	mov	r20,r5
+    int         full_length = length;
+    int         start_offset = offset;
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || (length > (flash->dev.length - offset)))
+   401e8:	2880420e 	bge	r5,r2,402f4 <alt_onchip_flash_write+0x148>
+   401ec:	1145c83a 	sub	r2,r2,r5
+   401f0:	11c04016 	blt	r2,r7,402f4 <alt_onchip_flash_write+0x148>
+   401f4:	302b883a 	mov	r21,r6
+   401f8:	24c01004 	addi	r19,r4,64
+   401fc:	382d883a 	mov	r22,r7
+   40200:	2807883a 	mov	r3,r5
+   40204:	002f883a 	mov	r23,zero
+    }
+
+    /*
+    * First and foremost which sectors are affected?
+    */
+    for(i=0;i<flash->dev.number_of_regions;i++)
+   40208:	80800c17 	ldw	r2,48(r16)
+   4020c:	b880310e 	bge	r23,r2,402d4 <alt_onchip_flash_write+0x128>
+    {
+        /* Is it in this erase block region?*/
+        if((offset >= flash->dev.region_info[i].offset) &&
+   40210:	9c7ffd17 	ldw	r17,-12(r19)
+   40214:	1c402b16 	blt	r3,r17,402c4 <alt_onchip_flash_write+0x118>
+            (offset < (flash->dev.region_info[i].offset +
+   40218:	98bffe17 	ldw	r2,-8(r19)
+   4021c:	8885883a 	add	r2,r17,r2
+    * First and foremost which sectors are affected?
+    */
+    for(i=0;i<flash->dev.number_of_regions;i++)
+    {
+        /* Is it in this erase block region?*/
+        if((offset >= flash->dev.region_info[i].offset) &&
+   40220:	1880280e 	bge	r3,r2,402c4 <alt_onchip_flash_write+0x118>
+   40224:	0039883a 	mov	fp,zero
+            (offset < (flash->dev.region_info[i].offset +
+            flash->dev.region_info[i].region_size)))
+        {
+            current_offset = flash->dev.region_info[i].offset;
+
+            for(j=0;j<flash->dev.region_info[i].number_of_blocks;j++)
+   40228:	98bfff17 	ldw	r2,-4(r19)
+   4022c:	e080250e 	bge	fp,r2,402c4 <alt_onchip_flash_write+0x118>
+            {
+                if ((offset >= current_offset ) &&
+   40230:	1c402016 	blt	r3,r17,402b4 <alt_onchip_flash_write+0x108>
+                    (offset < (current_offset +
+   40234:	9c800017 	ldw	r18,0(r19)
+   40238:	8ca5883a 	add	r18,r17,r18
+        {
+            current_offset = flash->dev.region_info[i].offset;
+
+            for(j=0;j<flash->dev.region_info[i].number_of_blocks;j++)
+            {
+                if ((offset >= current_offset ) &&
+   4023c:	1c801d0e 	bge	r3,r18,402b4 <alt_onchip_flash_write+0x108>
+                {
+                    /*
+                    * Check if the contents of the block are different
+                    * from the data we wish to put there
+                    */
+                    data_to_write = (current_offset + flash->dev.region_info[i].block_size - offset);
+   40240:	90e5c83a 	sub	r18,r18,r3
+                    data_to_write = MIN(data_to_write, length);
+   40244:	b480010e 	bge	r22,r18,4024c <alt_onchip_flash_write+0xa0>
+   40248:	b025883a 	mov	r18,r22
+                    if(memcmp(src_addr, (alt_u8*)flash->dev.base_addr+offset, data_to_write))
+   4024c:	81400a17 	ldw	r5,40(r16)
+   40250:	a809883a 	mov	r4,r21
+   40254:	900d883a 	mov	r6,r18
+   40258:	28cb883a 	add	r5,r5,r3
+   4025c:	d8c00215 	stw	r3,8(sp)
+   40260:	0040a800 	call	40a80 <memcmp>
+   40264:	10001a26 	beq	r2,zero,402d0 <alt_onchip_flash_write+0x124>
+                    {
+                        ret_code = (*flash->dev.erase_block)(&flash->dev, current_offset);
+   40268:	80800817 	ldw	r2,32(r16)
+   4026c:	8009883a 	mov	r4,r16
+   40270:	880b883a 	mov	r5,r17
+   40274:	103ee83a 	callr	r2
+
+                        if (!ret_code)
+   40278:	d8c00217 	ldw	r3,8(sp)
+   4027c:	1000161e 	bne	r2,zero,402d8 <alt_onchip_flash_write+0x12c>
+                        {
+                            ret_code = (*flash->dev.write_block)(
+   40280:	80800917 	ldw	r2,36(r16)
+   40284:	dc800015 	stw	r18,0(sp)
+   40288:	8009883a 	mov	r4,r16
+   4028c:	880b883a 	mov	r5,r17
+   40290:	180d883a 	mov	r6,r3
+   40294:	a80f883a 	mov	r7,r21
+   40298:	103ee83a 	callr	r2
+                                                                data_to_write);
+                        }
+                    }
+
+                    /* Was this the last block? */
+                    if ((length == data_to_write) || ret_code)
+   4029c:	b4800e26 	beq	r22,r18,402d8 <alt_onchip_flash_write+0x12c>
+   402a0:	10000d1e 	bne	r2,zero,402d8 <alt_onchip_flash_write+0x12c>
+                    {
+                        goto finished;
+                    }
+
+                    length -= data_to_write;
+                    offset = current_offset + flash->dev.region_info[i].block_size;
+   402a4:	98c00017 	ldw	r3,0(r19)
+                    if ((length == data_to_write) || ret_code)
+                    {
+                        goto finished;
+                    }
+
+                    length -= data_to_write;
+   402a8:	b4adc83a 	sub	r22,r22,r18
+                    offset = current_offset + flash->dev.region_info[i].block_size;
+                    src_addr = (alt_u8*)src_addr + data_to_write;
+   402ac:	acab883a 	add	r21,r21,r18
+                    {
+                        goto finished;
+                    }
+
+                    length -= data_to_write;
+                    offset = current_offset + flash->dev.region_info[i].block_size;
+   402b0:	88c7883a 	add	r3,r17,r3
+                    src_addr = (alt_u8*)src_addr + data_to_write;
+                }
+                current_offset += flash->dev.region_info[i].block_size;
+   402b4:	98800017 	ldw	r2,0(r19)
+            (offset < (flash->dev.region_info[i].offset +
+            flash->dev.region_info[i].region_size)))
+        {
+            current_offset = flash->dev.region_info[i].offset;
+
+            for(j=0;j<flash->dev.region_info[i].number_of_blocks;j++)
+   402b8:	e7000044 	addi	fp,fp,1
+
+                    length -= data_to_write;
+                    offset = current_offset + flash->dev.region_info[i].block_size;
+                    src_addr = (alt_u8*)src_addr + data_to_write;
+                }
+                current_offset += flash->dev.region_info[i].block_size;
+   402bc:	88a3883a 	add	r17,r17,r2
+   402c0:	003fd906 	br	40228 <_gp+0xffff74e0>
+    }
+
+    /*
+    * First and foremost which sectors are affected?
+    */
+    for(i=0;i<flash->dev.number_of_regions;i++)
+   402c4:	bdc00044 	addi	r23,r23,1
+   402c8:	9cc00404 	addi	r19,r19,16
+   402cc:	003fce06 	br	40208 <_gp+0xffff74c0>
+                                                                data_to_write);
+                        }
+                    }
+
+                    /* Was this the last block? */
+                    if ((length == data_to_write) || ret_code)
+   402d0:	b4bff41e 	bne	r22,r18,402a4 <_gp+0xffff755c>
+    int         full_length = length;
+    int         start_offset = offset;
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || (length > (flash->dev.length - offset)))
+   402d4:	0005883a 	mov	r2,zero
+            }
+        }
+    }
+
+finished:
+    alt_dcache_flush((alt_u8*)flash->dev.base_addr+start_offset, full_length);
+   402d8:	81000a17 	ldw	r4,40(r16)
+   402dc:	d9400117 	ldw	r5,4(sp)
+   402e0:	d8800215 	stw	r2,8(sp)
+   402e4:	2509883a 	add	r4,r4,r20
+   402e8:	00409240 	call	40924 <alt_dcache_flush>
+    return ret_code;
+   402ec:	d8800217 	ldw	r2,8(sp)
+   402f0:	00000106 	br	402f8 <alt_onchip_flash_write+0x14c>
+    alt_onchip_flash_dev* flash = (alt_onchip_flash_dev*)flash_info;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if ((offset >= flash->dev.length) || (length > (flash->dev.length - offset)))
+    {
+        return -EFAULT;
+   402f4:	00bffc84 	movi	r2,-14
+    }
+
+finished:
+    alt_dcache_flush((alt_u8*)flash->dev.base_addr+start_offset, full_length);
+    return ret_code;
+}
+   402f8:	dfc00c17 	ldw	ra,48(sp)
+   402fc:	df000b17 	ldw	fp,44(sp)
+   40300:	ddc00a17 	ldw	r23,40(sp)
+   40304:	dd800917 	ldw	r22,36(sp)
+   40308:	dd400817 	ldw	r21,32(sp)
+   4030c:	dd000717 	ldw	r20,28(sp)
+   40310:	dcc00617 	ldw	r19,24(sp)
+   40314:	dc800517 	ldw	r18,20(sp)
+   40318:	dc400417 	ldw	r17,16(sp)
+   4031c:	dc000317 	ldw	r16,12(sp)
+   40320:	dec00d04 	addi	sp,sp,52
+   40324:	f800283a 	ret
+
+00040328 <altera_onchip_flash_init>:
+
+    /* Set up flash_region data structures. */
+    number_of_regions = 0;
+    region_info = &flash->dev.region_info[0];
+
+    if (flash->csr_base != NULL) {
+   40328:	20802e17 	ldw	r2,184(r4)
+**/
+void altera_onchip_flash_init
+(
+    alt_onchip_flash_dev *flash
+)
+{
+   4032c:	defff704 	addi	sp,sp,-36
+   40330:	dc800215 	stw	r18,8(sp)
+   40334:	dc000015 	stw	r16,0(sp)
+   40338:	dfc00815 	stw	ra,32(sp)
+   4033c:	ddc00715 	stw	r23,28(sp)
+   40340:	dd800615 	stw	r22,24(sp)
+   40344:	dd400515 	stw	r21,20(sp)
+   40348:	dd000415 	stw	r20,16(sp)
+   4034c:	dcc00315 	stw	r19,12(sp)
+   40350:	dc400115 	stw	r17,4(sp)
+   40354:	2021883a 	mov	r16,r4
+    int sector4_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_AVAILABLE;
+    int sector5_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_AVAILABLE;
+
+    /* Set up flash_region data structures. */
+    number_of_regions = 0;
+    region_info = &flash->dev.region_info[0];
+   40358:	24800d04 	addi	r18,r4,52
+
+    if (flash->csr_base != NULL) {
+   4035c:	10000e26 	beq	r2,zero,40398 <altera_onchip_flash_init+0x70>
+        sector1_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_MSK;
+   40360:	10c00037 	ldwio	r3,0(r2)
+   40364:	18c0080c 	andi	r3,r3,32
+        sector2_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_MSK;
+   40368:	14c00037 	ldwio	r19,0(r2)
+        sector3_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_MSK;
+   4036c:	20802e17 	ldw	r2,184(r4)
+    number_of_regions = 0;
+    region_info = &flash->dev.region_info[0];
+
+    if (flash->csr_base != NULL) {
+        sector1_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_MSK;
+        sector2_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_MSK;
+   40370:	9cc0100c 	andi	r19,r19,64
+        sector3_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_MSK;
+   40374:	15800037 	ldwio	r22,0(r2)
+        sector4_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_MSK;
+   40378:	20802e17 	ldw	r2,184(r4)
+    region_info = &flash->dev.region_info[0];
+
+    if (flash->csr_base != NULL) {
+        sector1_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_MSK;
+        sector2_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_MSK;
+        sector3_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_MSK;
+   4037c:	b580200c 	andi	r22,r22,128
+        sector4_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_MSK;
+   40380:	15400037 	ldwio	r21,0(r2)
+        sector5_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_MSK;
+   40384:	20802e17 	ldw	r2,184(r4)
+
+    if (flash->csr_base != NULL) {
+        sector1_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_MSK;
+        sector2_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_MSK;
+        sector3_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_MSK;
+        sector4_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_MSK;
+   40388:	ad40400c 	andi	r21,r21,256
+        sector5_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_MSK;
+   4038c:	15000037 	ldwio	r20,0(r2)
+   40390:	a500800c 	andi	r20,r20,512
+   40394:	00000506 	br	403ac <altera_onchip_flash_init+0x84>
+    flash_region* region_info;
+    int sector1_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_AVAILABLE;
+    int sector2_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_AVAILABLE;
+    int sector3_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_AVAILABLE;
+    int sector4_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_AVAILABLE;
+    int sector5_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_AVAILABLE;
+   40398:	0029883a 	mov	r20,zero
+    int number_of_regions;
+    flash_region* region_info;
+    int sector1_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_AVAILABLE;
+    int sector2_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_AVAILABLE;
+    int sector3_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_AVAILABLE;
+    int sector4_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_AVAILABLE;
+   4039c:	002b883a 	mov	r21,zero
+    /* A region is a sector of the onchip flash */
+    int number_of_regions;
+    flash_region* region_info;
+    int sector1_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_AVAILABLE;
+    int sector2_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_AVAILABLE;
+    int sector3_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_AVAILABLE;
+   403a0:	002d883a 	mov	r22,zero
+{
+    /* A region is a sector of the onchip flash */
+    int number_of_regions;
+    flash_region* region_info;
+    int sector1_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_AVAILABLE;
+    int sector2_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_AVAILABLE;
+   403a4:	0027883a 	mov	r19,zero
+)
+{
+    /* A region is a sector of the onchip flash */
+    int number_of_regions;
+    flash_region* region_info;
+    int sector1_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_AVAILABLE;
+   403a8:	0007883a 	mov	r3,zero
+        sector3_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_MSK;
+        sector4_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_MSK;
+        sector5_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_MSK;
+    }
+
+    if ((flash->sector1_enabled == 1) && (sector1_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_UNAVAILABLE)) {
+   403ac:	84402f17 	ldw	r17,188(r16)
+   403b0:	00800044 	movi	r2,1
+   403b4:	88800d1e 	bne	r17,r2,403ec <altera_onchip_flash_init+0xc4>
+   403b8:	18000c1e 	bne	r3,zero,403ec <altera_onchip_flash_init+0xc4>
+
+        region_info[number_of_regions].offset = flash->sector1_start_addr;
+   403bc:	80803017 	ldw	r2,192(r16)
+        region_info[number_of_regions].region_size = flash->sector1_end_addr - flash->sector1_start_addr + 1;
+   403c0:	81003117 	ldw	r4,196(r16)
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   403c4:	85c03e17 	ldw	r23,248(r16)
+        sector5_status = IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) & ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_MSK;
+    }
+
+    if ((flash->sector1_enabled == 1) && (sector1_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR1_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector1_start_addr;
+   403c8:	80800d15 	stw	r2,52(r16)
+        region_info[number_of_regions].region_size = flash->sector1_end_addr - flash->sector1_start_addr + 1;
+   403cc:	2089c83a 	sub	r4,r4,r2
+   403d0:	21000044 	addi	r4,r4,1
+   403d4:	81000e15 	stw	r4,56(r16)
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   403d8:	b80b883a 	mov	r5,r23
+   403dc:	0040b640 	call	40b64 <__divsi3>
+   403e0:	80800f15 	stw	r2,60(r16)
+        region_info[number_of_regions].block_size = flash->page_size;
+   403e4:	85c01015 	stw	r23,64(r16)
+   403e8:	00000106 	br	403f0 <altera_onchip_flash_init+0xc8>
+    int sector3_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_AVAILABLE;
+    int sector4_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_AVAILABLE;
+    int sector5_status = ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_AVAILABLE;
+
+    /* Set up flash_region data structures. */
+    number_of_regions = 0;
+   403ec:	0023883a 	mov	r17,zero
+        region_info[number_of_regions].block_size = flash->page_size;
+
+        number_of_regions++;
+    }
+
+    if ((flash->sector2_enabled == 1) && (sector2_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_UNAVAILABLE)) {
+   403f0:	80c03217 	ldw	r3,200(r16)
+   403f4:	00800044 	movi	r2,1
+   403f8:	1880111e 	bne	r3,r2,40440 <altera_onchip_flash_init+0x118>
+   403fc:	9800101e 	bne	r19,zero,40440 <altera_onchip_flash_init+0x118>
+
+        region_info[number_of_regions].offset = flash->sector2_start_addr;
+   40400:	8804913a 	slli	r2,r17,4
+   40404:	80c03317 	ldw	r3,204(r16)
+        region_info[number_of_regions].region_size = flash->sector2_end_addr - flash->sector2_start_addr + 1;
+   40408:	81003417 	ldw	r4,208(r16)
+        number_of_regions++;
+    }
+
+    if ((flash->sector2_enabled == 1) && (sector2_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector2_start_addr;
+   4040c:	90a7883a 	add	r19,r18,r2
+   40410:	98c00015 	stw	r3,0(r19)
+        region_info[number_of_regions].region_size = flash->sector2_end_addr - flash->sector2_start_addr + 1;
+   40414:	20c7c83a 	sub	r3,r4,r3
+   40418:	18c00044 	addi	r3,r3,1
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   4041c:	85c03e17 	ldw	r23,248(r16)
+    }
+
+    if ((flash->sector2_enabled == 1) && (sector2_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector2_start_addr;
+        region_info[number_of_regions].region_size = flash->sector2_end_addr - flash->sector2_start_addr + 1;
+   40420:	98c00115 	stw	r3,4(r19)
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   40424:	8085883a 	add	r2,r16,r2
+   40428:	11000e17 	ldw	r4,56(r2)
+   4042c:	b80b883a 	mov	r5,r23
+        region_info[number_of_regions].block_size = flash->page_size;
+
+        number_of_regions++;
+   40430:	8c400044 	addi	r17,r17,1
+
+    if ((flash->sector2_enabled == 1) && (sector2_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR2_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector2_start_addr;
+        region_info[number_of_regions].region_size = flash->sector2_end_addr - flash->sector2_start_addr + 1;
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   40434:	0040b640 	call	40b64 <__divsi3>
+   40438:	98800215 	stw	r2,8(r19)
+        region_info[number_of_regions].block_size = flash->page_size;
+   4043c:	9dc00315 	stw	r23,12(r19)
+
+        number_of_regions++;
+	}
+
+    if ((flash->sector3_enabled == 1) && (sector3_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_UNAVAILABLE)) {
+   40440:	80c03517 	ldw	r3,212(r16)
+   40444:	00800044 	movi	r2,1
+   40448:	1880111e 	bne	r3,r2,40490 <altera_onchip_flash_init+0x168>
+   4044c:	b000101e 	bne	r22,zero,40490 <altera_onchip_flash_init+0x168>
+
+        region_info[number_of_regions].offset = flash->sector3_start_addr;
+   40450:	8804913a 	slli	r2,r17,4
+   40454:	80c03617 	ldw	r3,216(r16)
+        region_info[number_of_regions].region_size = flash->sector3_end_addr - flash->sector3_start_addr + 1;
+   40458:	81003717 	ldw	r4,220(r16)
+        number_of_regions++;
+	}
+
+    if ((flash->sector3_enabled == 1) && (sector3_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector3_start_addr;
+   4045c:	90a7883a 	add	r19,r18,r2
+   40460:	98c00015 	stw	r3,0(r19)
+        region_info[number_of_regions].region_size = flash->sector3_end_addr - flash->sector3_start_addr + 1;
+   40464:	20c7c83a 	sub	r3,r4,r3
+   40468:	18c00044 	addi	r3,r3,1
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   4046c:	85803e17 	ldw	r22,248(r16)
+	}
+
+    if ((flash->sector3_enabled == 1) && (sector3_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector3_start_addr;
+        region_info[number_of_regions].region_size = flash->sector3_end_addr - flash->sector3_start_addr + 1;
+   40470:	98c00115 	stw	r3,4(r19)
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   40474:	8085883a 	add	r2,r16,r2
+   40478:	11000e17 	ldw	r4,56(r2)
+   4047c:	b00b883a 	mov	r5,r22
+        region_info[number_of_regions].block_size = flash->page_size;
+
+        number_of_regions++;
+   40480:	8c400044 	addi	r17,r17,1
+
+    if ((flash->sector3_enabled == 1) && (sector3_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR3_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector3_start_addr;
+        region_info[number_of_regions].region_size = flash->sector3_end_addr - flash->sector3_start_addr + 1;
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   40484:	0040b640 	call	40b64 <__divsi3>
+   40488:	98800215 	stw	r2,8(r19)
+        region_info[number_of_regions].block_size = flash->page_size;
+   4048c:	9d800315 	stw	r22,12(r19)
+
+        number_of_regions++;
+	}
+
+	if ((flash->sector4_enabled == 1) && (sector4_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_UNAVAILABLE)) {
+   40490:	80c03817 	ldw	r3,224(r16)
+   40494:	00800044 	movi	r2,1
+   40498:	1880111e 	bne	r3,r2,404e0 <altera_onchip_flash_init+0x1b8>
+   4049c:	a800101e 	bne	r21,zero,404e0 <altera_onchip_flash_init+0x1b8>
+
+        region_info[number_of_regions].offset = flash->sector4_start_addr;
+   404a0:	8804913a 	slli	r2,r17,4
+   404a4:	80c03917 	ldw	r3,228(r16)
+        region_info[number_of_regions].region_size = flash->sector4_end_addr - flash->sector4_start_addr + 1;
+   404a8:	81003a17 	ldw	r4,232(r16)
+        number_of_regions++;
+	}
+
+	if ((flash->sector4_enabled == 1) && (sector4_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector4_start_addr;
+   404ac:	90a7883a 	add	r19,r18,r2
+   404b0:	98c00015 	stw	r3,0(r19)
+        region_info[number_of_regions].region_size = flash->sector4_end_addr - flash->sector4_start_addr + 1;
+   404b4:	20c7c83a 	sub	r3,r4,r3
+   404b8:	18c00044 	addi	r3,r3,1
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   404bc:	85403e17 	ldw	r21,248(r16)
+	}
+
+	if ((flash->sector4_enabled == 1) && (sector4_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector4_start_addr;
+        region_info[number_of_regions].region_size = flash->sector4_end_addr - flash->sector4_start_addr + 1;
+   404c0:	98c00115 	stw	r3,4(r19)
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   404c4:	8085883a 	add	r2,r16,r2
+   404c8:	11000e17 	ldw	r4,56(r2)
+   404cc:	a80b883a 	mov	r5,r21
+        region_info[number_of_regions].block_size = flash->page_size;
+
+        number_of_regions++;
+   404d0:	8c400044 	addi	r17,r17,1
+
+	if ((flash->sector4_enabled == 1) && (sector4_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR4_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector4_start_addr;
+        region_info[number_of_regions].region_size = flash->sector4_end_addr - flash->sector4_start_addr + 1;
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   404d4:	0040b640 	call	40b64 <__divsi3>
+   404d8:	98800215 	stw	r2,8(r19)
+        region_info[number_of_regions].block_size = flash->page_size;
+   404dc:	9d400315 	stw	r21,12(r19)
+
+        number_of_regions++;
+	}
+
+    if ((flash->sector5_enabled == 1) && (sector5_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_UNAVAILABLE)) {
+   404e0:	80c03b17 	ldw	r3,236(r16)
+   404e4:	00800044 	movi	r2,1
+   404e8:	1880111e 	bne	r3,r2,40530 <altera_onchip_flash_init+0x208>
+   404ec:	a000101e 	bne	r20,zero,40530 <altera_onchip_flash_init+0x208>
+
+        region_info[number_of_regions].offset = flash->sector5_start_addr;
+   404f0:	8804913a 	slli	r2,r17,4
+   404f4:	80c03c17 	ldw	r3,240(r16)
+        region_info[number_of_regions].region_size = flash->sector5_end_addr - flash->sector5_start_addr + 1;
+   404f8:	81003d17 	ldw	r4,244(r16)
+        number_of_regions++;
+	}
+
+    if ((flash->sector5_enabled == 1) && (sector5_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector5_start_addr;
+   404fc:	90a5883a 	add	r18,r18,r2
+   40500:	90c00015 	stw	r3,0(r18)
+        region_info[number_of_regions].region_size = flash->sector5_end_addr - flash->sector5_start_addr + 1;
+   40504:	20c7c83a 	sub	r3,r4,r3
+   40508:	18c00044 	addi	r3,r3,1
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   4050c:	84c03e17 	ldw	r19,248(r16)
+	}
+
+    if ((flash->sector5_enabled == 1) && (sector5_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector5_start_addr;
+        region_info[number_of_regions].region_size = flash->sector5_end_addr - flash->sector5_start_addr + 1;
+   40510:	90c00115 	stw	r3,4(r18)
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   40514:	8085883a 	add	r2,r16,r2
+   40518:	11000e17 	ldw	r4,56(r2)
+   4051c:	980b883a 	mov	r5,r19
+        region_info[number_of_regions].block_size = flash->page_size;
+
+        number_of_regions++;
+   40520:	8c400044 	addi	r17,r17,1
+
+    if ((flash->sector5_enabled == 1) && (sector5_status != ALTERA_ONCHIP_FLASH_STATUS_SECTOR5_UNAVAILABLE)) {
+
+        region_info[number_of_regions].offset = flash->sector5_start_addr;
+        region_info[number_of_regions].region_size = flash->sector5_end_addr - flash->sector5_start_addr + 1;
+        region_info[number_of_regions].number_of_blocks = flash->dev.region_info[number_of_regions].region_size / flash->page_size;
+   40524:	0040b640 	call	40b64 <__divsi3>
+   40528:	90800215 	stw	r2,8(r18)
+        region_info[number_of_regions].block_size = flash->page_size;
+   4052c:	94c00315 	stw	r19,12(r18)
+
+static ALT_INLINE int alt_flash_device_register( alt_flash_fd* fd)
+{
+  extern alt_llist alt_flash_dev_list;
+
+  return alt_dev_llist_insert ((alt_dev_llist*) fd, &alt_flash_dev_list);
+   40530:	8009883a 	mov	r4,r16
+   40534:	01400134 	movhi	r5,4
+   40538:	29435604 	addi	r5,r5,3416
+
+        number_of_regions++;
+    }
+
+    /* Update number of regions. */
+    flash->dev.number_of_regions = number_of_regions;
+   4053c:	84400c15 	stw	r17,48(r16)
+
+    /*
+    *  Register this device as a valid flash device type
+    */
+    alt_flash_device_register(&(flash->dev));
+}
+   40540:	dfc00817 	ldw	ra,32(sp)
+   40544:	ddc00717 	ldw	r23,28(sp)
+   40548:	dd800617 	ldw	r22,24(sp)
+   4054c:	dd400517 	ldw	r21,20(sp)
+   40550:	dd000417 	ldw	r20,16(sp)
+   40554:	dcc00317 	ldw	r19,12(sp)
+   40558:	dc800217 	ldw	r18,8(sp)
+   4055c:	dc400117 	ldw	r17,4(sp)
+   40560:	dc000017 	ldw	r16,0(sp)
+   40564:	dec00904 	addi	sp,sp,36
+   40568:	00409281 	jmpi	40928 <alt_dev_llist_insert>
+
+0004056c <alt_onchip_flash_poll_for_status_to_go_idle>:
+{
+    int ret_code = 0;
+    int timeout = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+    int count_down = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+
+    while (
+   4056c:	00817db4 	movhi	r2,1526
+   40570:	10b84004 	addi	r2,r2,-7936
+        (IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) &
+   40574:	20c02e17 	ldw	r3,184(r4)
+   40578:	18c00037 	ldwio	r3,0(r3)
+   4057c:	18c000cc 	andi	r3,r3,3
+{
+    int ret_code = 0;
+    int timeout = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+    int count_down = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+
+    while (
+   40580:	18000426 	beq	r3,zero,40594 <alt_onchip_flash_poll_for_status_to_go_idle+0x28>
+   40584:	10bfffc4 	addi	r2,r2,-1
+        ) !=  ALTERA_ONCHIP_FLASH_STATUS_BUSY_IDLE
+    ) {
+        /* If timeout value is zero, it will never timeout. */
+        if (timeout != 0) {
+            count_down--;
+            if (count_down == 0) {
+   40588:	103ffa1e 	bne	r2,zero,40574 <_gp+0xffff782c>
+                /* Timeout */
+                ret_code = -ETIMEDOUT;
+   4058c:	00bfe304 	movi	r2,-116
+            }
+        }
+    }
+
+    return ret_code;
+}
+   40590:	f800283a 	ret
+int alt_onchip_flash_poll_for_status_to_go_idle
+(
+    alt_onchip_flash_dev *flash
+)
+{
+    int ret_code = 0;
+   40594:	0005883a 	mov	r2,zero
+   40598:	f800283a 	ret
+
+0004059c <alt_onchip_flash_poll_for_status_erase_passed>:
+{
+    int ret_code = 0;
+    int timeout = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+    int count_down = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+
+    while (
+   4059c:	00817db4 	movhi	r2,1526
+   405a0:	10b84004 	addi	r2,r2,-7936
+        (IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) &
+   405a4:	20c02e17 	ldw	r3,184(r4)
+   405a8:	18c00037 	ldwio	r3,0(r3)
+   405ac:	18c0040c 	andi	r3,r3,16
+{
+    int ret_code = 0;
+    int timeout = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+    int count_down = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+
+    while (
+   405b0:	1800041e 	bne	r3,zero,405c4 <alt_onchip_flash_poll_for_status_erase_passed+0x28>
+   405b4:	10bfffc4 	addi	r2,r2,-1
+        ) !=  ALTERA_ONCHIP_FLASH_STATUS_ERASE_PASSED
+    ) {
+        /* If timeout value is zero, it will never timeout. */
+        if (timeout != 0) {
+            count_down--;
+            if (count_down == 0) {
+   405b8:	103ffa1e 	bne	r2,zero,405a4 <_gp+0xffff785c>
+                /* Timeout */
+                ret_code = -ETIMEDOUT;
+   405bc:	00bfe304 	movi	r2,-116
+            }
+        }
+    }
+
+    return ret_code;
+}
+   405c0:	f800283a 	ret
+int alt_onchip_flash_poll_for_status_erase_passed
+(
+    alt_onchip_flash_dev *flash
+)
+{
+    int ret_code = 0;
+   405c4:	0005883a 	mov	r2,zero
+   405c8:	f800283a 	ret
+
+000405cc <alt_onchip_flash_erase_block>:
+    int ret_code = 0;
+    alt_onchip_flash_dev *flash = (alt_onchip_flash_dev*)flash_info;
+    int page_address;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if (block_offset >= flash->dev.length) {
+   405cc:	20800b17 	ldw	r2,44(r4)
+int alt_onchip_flash_erase_block
+(
+    alt_flash_dev *flash_info,
+    int           block_offset
+)
+{
+   405d0:	200d883a 	mov	r6,r4
+    int ret_code = 0;
+    alt_onchip_flash_dev *flash = (alt_onchip_flash_dev*)flash_info;
+    int page_address;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if (block_offset >= flash->dev.length) {
+   405d4:	28802a0e 	bge	r5,r2,40680 <alt_onchip_flash_erase_block+0xb4>
+        return -EFAULT;
+    }
+
+    /* Make sure IP support write and erase operation */
+    if ((flash->csr_base == NULL) || (flash->is_read_only)) {
+   405d8:	20802e17 	ldw	r2,184(r4)
+   405dc:	10002a26 	beq	r2,zero,40688 <alt_onchip_flash_erase_block+0xbc>
+   405e0:	20802d17 	ldw	r2,180(r4)
+   405e4:	1000281e 	bne	r2,zero,40688 <alt_onchip_flash_erase_block+0xbc>
+        return -ENODEV;
+    }
+
+    /* The block_offset must be page size aligned */
+    if ((block_offset & (flash->page_size - 1)) != 0)
+   405e8:	20803e17 	ldw	r2,248(r4)
+   405ec:	10bfffc4 	addi	r2,r2,-1
+   405f0:	2884703a 	and	r2,r5,r2
+   405f4:	1000261e 	bne	r2,zero,40690 <alt_onchip_flash_erase_block+0xc4>
+int alt_onchip_flash_erase_block
+(
+    alt_flash_dev *flash_info,
+    int           block_offset
+)
+{
+   405f8:	deffff04 	addi	sp,sp,-4
+   405fc:	dfc00015 	stw	ra,0(sp)
+        /* The address is not aligned */
+        return -EINVAL;
+    }
+
+    /* Wait until flash controller idle */
+    ret_code = alt_onchip_flash_poll_for_status_to_go_idle(flash);
+   40600:	004056c0 	call	4056c <alt_onchip_flash_poll_for_status_to_go_idle>
+    if (ret_code != 0)
+   40604:	1000241e 	bne	r2,zero,40698 <alt_onchip_flash_erase_block+0xcc>
+    {
+        return ret_code;
+    }
+
+    /* Enable write and erase operation */
+    ALTERA_ONCHIP_FLASH_ENABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+   40608:	30802e17 	ldw	r2,184(r6)
+   4060c:	10800104 	addi	r2,r2,4
+   40610:	10c00037 	ldwio	r3,0(r2)
+   40614:	01002034 	movhi	r4,128
+   40618:	213fffc4 	addi	r4,r4,-1
+   4061c:	18fc002c 	andhi	r3,r3,61440
+   40620:	1906b03a 	or	r3,r3,r4
+   40624:	10c00035 	stwio	r3,0(r2)
+
+    /* Calculate Page erase address, it is 32bit word addressing*/
+    page_address = block_offset / 4;
+
+    /* Perform Page erase operation */
+    ALTERA_ONCHIP_FLASH_PAGE_ERASE(flash->csr_base, page_address);
+   40628:	30802e17 	ldw	r2,184(r6)
+   4062c:	10800104 	addi	r2,r2,4
+   40630:	10c00037 	ldwio	r3,0(r2)
+
+    /* Enable write and erase operation */
+    ALTERA_ONCHIP_FLASH_ENABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+
+    /* Calculate Page erase address, it is 32bit word addressing*/
+    page_address = block_offset / 4;
+   40634:	2800010e 	bge	r5,zero,4063c <alt_onchip_flash_erase_block+0x70>
+   40638:	294000c4 	addi	r5,r5,3
+   4063c:	280bd0ba 	srai	r5,r5,2
+
+    /* Perform Page erase operation */
+    ALTERA_ONCHIP_FLASH_PAGE_ERASE(flash->csr_base, page_address);
+   40640:	18fc002c 	andhi	r3,r3,61440
+   40644:	29401c34 	orhi	r5,r5,112
+   40648:	28cab03a 	or	r5,r5,r3
+   4064c:	11400035 	stwio	r5,0(r2)
+
+    /* Wait until flash controller idle */
+    ret_code = alt_onchip_flash_poll_for_status_to_go_idle(flash);
+   40650:	3009883a 	mov	r4,r6
+   40654:	004056c0 	call	4056c <alt_onchip_flash_poll_for_status_to_go_idle>
+
+    /* Wait until flash controller indicate erase passed */
+    ret_code = alt_onchip_flash_poll_for_status_erase_passed(flash);
+   40658:	3009883a 	mov	r4,r6
+   4065c:	004059c0 	call	4059c <alt_onchip_flash_poll_for_status_erase_passed>
+
+    /* Disable write and erase operation */
+    ALTERA_ONCHIP_FLASH_DISABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+   40660:	30c02e17 	ldw	r3,184(r6)
+   40664:	18c00104 	addi	r3,r3,4
+   40668:	19400037 	ldwio	r5,0(r3)
+   4066c:	01040034 	movhi	r4,4096
+   40670:	213fffc4 	addi	r4,r4,-1
+   40674:	2908b03a 	or	r4,r5,r4
+   40678:	19000035 	stwio	r4,0(r3)
+
+    return ret_code;
+   4067c:	00000606 	br	40698 <alt_onchip_flash_erase_block+0xcc>
+    alt_onchip_flash_dev *flash = (alt_onchip_flash_dev*)flash_info;
+    int page_address;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if (block_offset >= flash->dev.length) {
+        return -EFAULT;
+   40680:	00bffc84 	movi	r2,-14
+   40684:	f800283a 	ret
+    }
+
+    /* Make sure IP support write and erase operation */
+    if ((flash->csr_base == NULL) || (flash->is_read_only)) {
+        return -ENODEV;
+   40688:	00bffb44 	movi	r2,-19
+
+    /* Disable write and erase operation */
+    ALTERA_ONCHIP_FLASH_DISABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+
+    return ret_code;
+}
+   4068c:	f800283a 	ret
+
+    /* The block_offset must be page size aligned */
+    if ((block_offset & (flash->page_size - 1)) != 0)
+    {
+        /* The address is not aligned */
+        return -EINVAL;
+   40690:	00bffa84 	movi	r2,-22
+   40694:	f800283a 	ret
+
+    /* Disable write and erase operation */
+    ALTERA_ONCHIP_FLASH_DISABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+
+    return ret_code;
+}
+   40698:	dfc00017 	ldw	ra,0(sp)
+   4069c:	dec00104 	addi	sp,sp,4
+   406a0:	f800283a 	ret
+
+000406a4 <alt_onchip_flash_poll_for_status_write_passed>:
+{
+    int ret_code = 0;
+    int timeout = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+    int count_down = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+
+    while (
+   406a4:	00817db4 	movhi	r2,1526
+   406a8:	10b84004 	addi	r2,r2,-7936
+        (IORD_ALTERA_ONCHIP_FLASH_STATUS(flash->csr_base) &
+   406ac:	20c02e17 	ldw	r3,184(r4)
+   406b0:	18c00037 	ldwio	r3,0(r3)
+   406b4:	18c0020c 	andi	r3,r3,8
+{
+    int ret_code = 0;
+    int timeout = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+    int count_down = ALTERA_ONCHIP_FLASH_STATUS_BIT_POLLING_TIMEOUT_VALUE;
+
+    while (
+   406b8:	1800041e 	bne	r3,zero,406cc <alt_onchip_flash_poll_for_status_write_passed+0x28>
+   406bc:	10bfffc4 	addi	r2,r2,-1
+        ) !=  ALTERA_ONCHIP_FLASH_STATUS_WRITE_PASSED
+    ) {
+        /* If timeout value is zero, it will never timeout. */
+        if (timeout != 0) {
+            count_down--;
+            if (count_down == 0) {
+   406c0:	103ffa1e 	bne	r2,zero,406ac <_gp+0xffff7964>
+                /* Timeout */
+                ret_code = -ETIMEDOUT;
+   406c4:	00bfe304 	movi	r2,-116
+            }
+        }
+    }
+
+    return ret_code;
+}
+   406c8:	f800283a 	ret
+int alt_onchip_flash_poll_for_status_write_passed
+(
+    alt_onchip_flash_dev *flash
+)
+{
+    int ret_code = 0;
+   406cc:	0005883a 	mov	r2,zero
+   406d0:	f800283a 	ret
+
+000406d4 <alt_onchip_flash_write_block>:
+    int next_data_offset;
+    alt_u32 chunk_of_data;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if (
+        (block_offset >= flash->dev.length) ||
+   406d4:	20800b17 	ldw	r2,44(r4)
+    int           block_offset,
+    int           data_offset,
+    const void    *data,
+    int           length
+)
+{
+   406d8:	defff204 	addi	sp,sp,-56
+   406dc:	dc800615 	stw	r18,24(sp)
+   406e0:	dc400515 	stw	r17,20(sp)
+   406e4:	dfc00d15 	stw	ra,52(sp)
+   406e8:	df000c15 	stw	fp,48(sp)
+   406ec:	ddc00b15 	stw	r23,44(sp)
+   406f0:	dd800a15 	stw	r22,40(sp)
+   406f4:	dd400915 	stw	r21,36(sp)
+   406f8:	dd000815 	stw	r20,32(sp)
+   406fc:	dcc00715 	stw	r19,28(sp)
+   40700:	dc000415 	stw	r16,16(sp)
+   40704:	2025883a 	mov	r18,r4
+   40708:	dc400e17 	ldw	r17,56(sp)
+    int current_data_offset = data_offset;
+    int next_data_offset;
+    alt_u32 chunk_of_data;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if (
+   4070c:	2880520e 	bge	r5,r2,40858 <alt_onchip_flash_write_block+0x184>
+   40710:	3021883a 	mov	r16,r6
+        (block_offset >= flash->dev.length) ||
+   40714:	3080500e 	bge	r6,r2,40858 <alt_onchip_flash_write_block+0x184>
+        (data_offset >= flash->dev.length) ||
+        (length > (flash->dev.length - data_offset))
+   40718:	1185c83a 	sub	r2,r2,r6
+    alt_u32 chunk_of_data;
+
+    /* Make sure the input parameters is not outside of this device's range. */
+    if (
+        (block_offset >= flash->dev.length) ||
+        (data_offset >= flash->dev.length) ||
+   4071c:	14404e16 	blt	r2,r17,40858 <alt_onchip_flash_write_block+0x184>
+    ) {
+        return -EFAULT;
+    }
+
+    /* Make sure IP support support write and erase operation */
+    if ((flash->csr_base == NULL) || (flash->is_read_only != 0)) {
+   40720:	20802e17 	ldw	r2,184(r4)
+   40724:	10004e26 	beq	r2,zero,40860 <alt_onchip_flash_write_block+0x18c>
+   40728:	20802d17 	ldw	r2,180(r4)
+   4072c:	10004c1e 	bne	r2,zero,40860 <alt_onchip_flash_write_block+0x18c>
+        return -ENODEV;
+    }
+
+    /* Wait until flash controller idle */
+    ret_code = alt_onchip_flash_poll_for_status_to_go_idle(flash);
+   40730:	004056c0 	call	4056c <alt_onchip_flash_poll_for_status_to_go_idle>
+   40734:	1027883a 	mov	r19,r2
+    if (ret_code != 0)
+   40738:	10004b1e 	bne	r2,zero,40868 <alt_onchip_flash_write_block+0x194>
+    {
+        return ret_code;
+    }
+
+    /* Enable write and erase operation */
+    ALTERA_ONCHIP_FLASH_ENABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+   4073c:	90802e17 	ldw	r2,184(r18)
+   40740:	382f883a 	mov	r23,r7
+   40744:	10800104 	addi	r2,r2,4
+   40748:	10c00037 	ldwio	r3,0(r2)
+   4074c:	01002034 	movhi	r4,128
+   40750:	213fffc4 	addi	r4,r4,-1
+   40754:	18fc002c 	andhi	r3,r3,61440
+   40758:	1906b03a 	or	r3,r3,r4
+   4075c:	10c00035 	stwio	r3,0(r2)
+    int           length
+)
+{
+    int ret_code = 0;
+    alt_onchip_flash_dev *flash = (alt_onchip_flash_dev*)flash_info;
+    int buffer_offset = 0;
+   40760:	0029883a 	mov	r20,zero
+
+    /* Check data length */
+    while (length)
+    {
+        /* Minimum write size to onchip flash is 32 bits of data */
+        chunk_of_data = 0xFFFFFFFF;
+   40764:	073fffc4 	movi	fp,-1
+   40768:	05bfff04 	movi	r22,-4
+
+    /* Enable write and erase operation */
+    ALTERA_ONCHIP_FLASH_ENABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+
+    /* Check data length */
+    while (length)
+   4076c:	88003226 	beq	r17,zero,40838 <alt_onchip_flash_write_block+0x164>
+    {
+        /* Minimum write size to onchip flash is 32 bits of data */
+        chunk_of_data = 0xFFFFFFFF;
+   40770:	df000015 	stw	fp,0(sp)
+
+        /* The start of data_offset must be 4 bytes (32 bits) aligned */
+        if ((current_data_offset & (ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE - 1)) == 0)
+   40774:	80c000cc 	andi	r3,r16,3
+   40778:	bd0b883a 	add	r5,r23,r20
+   4077c:	18000d1e 	bne	r3,zero,407b4 <alt_onchip_flash_write_block+0xe0>
+        {
+            /* The address is 4-byte aligned here */
+            next_data_offset = (current_data_offset + ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE) & ~(ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE - 1);
+   40780:	85400104 	addi	r21,r16,4
+   40784:	adaa703a 	and	r21,r21,r22
+            length_of_current_write = MIN(length, next_data_offset - current_data_offset);
+   40788:	ac07c83a 	sub	r3,r21,r16
+   4078c:	88c0010e 	bge	r17,r3,40794 <alt_onchip_flash_write_block+0xc0>
+   40790:	8807883a 	mov	r3,r17
+            /* Prepare the 4 bytes chunk of data to be written */
+            memcpy(&chunk_of_data, &((alt_u8*)data)[buffer_offset], length_of_current_write);
+   40794:	180d883a 	mov	r6,r3
+   40798:	d809883a 	mov	r4,sp
+   4079c:	d8c00315 	stw	r3,12(sp)
+   407a0:	0040ab00 	call	40ab0 <memcpy>
+            buffer_offset += length_of_current_write;
+   407a4:	d8c00317 	ldw	r3,12(sp)
+   407a8:	a0e9883a 	add	r20,r20,r3
+            length -= length_of_current_write;
+   407ac:	88e3c83a 	sub	r17,r17,r3
+   407b0:	00001406 	br	40804 <alt_onchip_flash_write_block+0x130>
+        } else {
+            /* Calculate how many padding bytes need to be added before the start of a data offset */
+            int padding = current_data_offset & (ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE - 1);
+
+            /* Calculate new 4-byte aligned data offset */
+            current_data_offset = current_data_offset - padding;
+   407b4:	80e1c83a 	sub	r16,r16,r3
+            next_data_offset = (current_data_offset + ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE) & ~(ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE - 1);
+   407b8:	85400104 	addi	r21,r16,4
+   407bc:	adaa703a 	and	r21,r21,r22
+            length_of_current_write = MIN(length + padding, next_data_offset - current_data_offset);
+   407c0:	88c5883a 	add	r2,r17,r3
+   407c4:	ac0fc83a 	sub	r7,r21,r16
+   407c8:	11c0010e 	bge	r2,r7,407d0 <alt_onchip_flash_write_block+0xfc>
+   407cc:	100f883a 	mov	r7,r2
+            /* Prepare the 4 bytes chunk of data to be written */
+            memcpy((void *)(((int)&chunk_of_data) + (int)padding), &((alt_u8*)data)[buffer_offset], length_of_current_write - padding);
+   407d0:	38d1c83a 	sub	r8,r7,r3
+   407d4:	d8c9883a 	add	r4,sp,r3
+   407d8:	400d883a 	mov	r6,r8
+   407dc:	d8c00315 	stw	r3,12(sp)
+   407e0:	d9c00115 	stw	r7,4(sp)
+   407e4:	da000215 	stw	r8,8(sp)
+   407e8:	0040ab00 	call	40ab0 <memcpy>
+            buffer_offset += length_of_current_write - padding;
+            length -= length_of_current_write - padding;
+   407ec:	d8c00317 	ldw	r3,12(sp)
+   407f0:	d9c00117 	ldw	r7,4(sp)
+            current_data_offset = current_data_offset - padding;
+            next_data_offset = (current_data_offset + ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE) & ~(ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE - 1);
+            length_of_current_write = MIN(length + padding, next_data_offset - current_data_offset);
+            /* Prepare the 4 bytes chunk of data to be written */
+            memcpy((void *)(((int)&chunk_of_data) + (int)padding), &((alt_u8*)data)[buffer_offset], length_of_current_write - padding);
+            buffer_offset += length_of_current_write - padding;
+   407f4:	da000217 	ldw	r8,8(sp)
+            length -= length_of_current_write - padding;
+   407f8:	19c7c83a 	sub	r3,r3,r7
+            current_data_offset = current_data_offset - padding;
+            next_data_offset = (current_data_offset + ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE) & ~(ALTERA_ONCHIP_FLASH_DATA_ALIGN_SIZE - 1);
+            length_of_current_write = MIN(length + padding, next_data_offset - current_data_offset);
+            /* Prepare the 4 bytes chunk of data to be written */
+            memcpy((void *)(((int)&chunk_of_data) + (int)padding), &((alt_u8*)data)[buffer_offset], length_of_current_write - padding);
+            buffer_offset += length_of_current_write - padding;
+   407fc:	a229883a 	add	r20,r20,r8
+            length -= length_of_current_write - padding;
+   40800:	88e3883a 	add	r17,r17,r3
+        }
+
+        /* Writing to flash via IO 32 bits at a time */
+        IOWR_32DIRECT(flash->dev.base_addr, current_data_offset, chunk_of_data);
+   40804:	90800a17 	ldw	r2,40(r18)
+   40808:	1421883a 	add	r16,r2,r16
+   4080c:	d8800017 	ldw	r2,0(sp)
+   40810:	80800035 	stwio	r2,0(r16)
+
+        /* Wait until flash controller idle */
+        ret_code = alt_onchip_flash_poll_for_status_to_go_idle(flash);
+   40814:	9009883a 	mov	r4,r18
+   40818:	004056c0 	call	4056c <alt_onchip_flash_poll_for_status_to_go_idle>
+        if (ret_code != 0)
+   4081c:	1000051e 	bne	r2,zero,40834 <alt_onchip_flash_write_block+0x160>
+        {
+            break;
+        }
+
+        /* Wait until flash controller indicate write passed */
+        ret_code = alt_onchip_flash_poll_for_status_write_passed(flash);
+   40820:	9009883a 	mov	r4,r18
+   40824:	00406a40 	call	406a4 <alt_onchip_flash_poll_for_status_write_passed>
+        if (ret_code != 0)
+   40828:	1000021e 	bne	r2,zero,40834 <alt_onchip_flash_write_block+0x160>
+        {
+            break;
+        }
+
+        /* Prepare to write next 4 bytes */
+        current_data_offset = next_data_offset;
+   4082c:	a821883a 	mov	r16,r21
+   40830:	003fce06 	br	4076c <_gp+0xffff7a24>
+        {
+            break;
+        }
+
+        /* Wait until flash controller indicate write passed */
+        ret_code = alt_onchip_flash_poll_for_status_write_passed(flash);
+   40834:	1027883a 	mov	r19,r2
+        /* Prepare to write next 4 bytes */
+        current_data_offset = next_data_offset;
+    }
+
+    /* Disable write and erase operation */
+    ALTERA_ONCHIP_FLASH_DISABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+   40838:	90802e17 	ldw	r2,184(r18)
+   4083c:	10800104 	addi	r2,r2,4
+   40840:	11000037 	ldwio	r4,0(r2)
+   40844:	00c40034 	movhi	r3,4096
+   40848:	18ffffc4 	addi	r3,r3,-1
+   4084c:	20c6b03a 	or	r3,r4,r3
+   40850:	10c00035 	stwio	r3,0(r2)
+   40854:	00000406 	br	40868 <alt_onchip_flash_write_block+0x194>
+    if (
+        (block_offset >= flash->dev.length) ||
+        (data_offset >= flash->dev.length) ||
+        (length > (flash->dev.length - data_offset))
+    ) {
+        return -EFAULT;
+   40858:	00bffc84 	movi	r2,-14
+   4085c:	00000306 	br	4086c <alt_onchip_flash_write_block+0x198>
+    }
+
+    /* Make sure IP support support write and erase operation */
+    if ((flash->csr_base == NULL) || (flash->is_read_only != 0)) {
+        return -ENODEV;
+   40860:	00bffb44 	movi	r2,-19
+   40864:	00000106 	br	4086c <alt_onchip_flash_write_block+0x198>
+   40868:	9805883a 	mov	r2,r19
+
+    /* Disable write and erase operation */
+    ALTERA_ONCHIP_FLASH_DISABLE_WRITE_AND_ERASE_OPERATION(flash->csr_base);
+
+    return ret_code;
+}
+   4086c:	dfc00d17 	ldw	ra,52(sp)
+   40870:	df000c17 	ldw	fp,48(sp)
+   40874:	ddc00b17 	ldw	r23,44(sp)
+   40878:	dd800a17 	ldw	r22,40(sp)
+   4087c:	dd400917 	ldw	r21,36(sp)
+   40880:	dd000817 	ldw	r20,32(sp)
+   40884:	dcc00717 	ldw	r19,28(sp)
+   40888:	dc800617 	ldw	r18,24(sp)
+   4088c:	dc400517 	ldw	r17,20(sp)
+   40890:	dc000417 	ldw	r16,16(sp)
+   40894:	dec00e04 	addi	sp,sp,56
+   40898:	f800283a 	ret
+
+0004089c <alt_busy_sleep>:
+#include "alt_types.h"
+
+#include "priv/alt_busy_sleep.h"
+
+unsigned int alt_busy_sleep (unsigned int us)
+{
+   4089c:	defffe04 	addi	sp,sp,-8
+  {
+    cycles_per_loop = 3;
+  }
+  
+
+  big_loops = us / (INT_MAX/
+   408a0:	014666b4 	movhi	r5,6554
+   408a4:	29666644 	addi	r5,r5,-26215
+#include "alt_types.h"
+
+#include "priv/alt_busy_sleep.h"
+
+unsigned int alt_busy_sleep (unsigned int us)
+{
+   408a8:	dc000015 	stw	r16,0(sp)
+   408ac:	dfc00115 	stw	ra,4(sp)
+   408b0:	2021883a 	mov	r16,r4
+  {
+    cycles_per_loop = 3;
+  }
+  
+
+  big_loops = us / (INT_MAX/
+   408b4:	0040bf80 	call	40bf8 <__udivsi3>
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+   408b8:	10001026 	beq	r2,zero,408fc <alt_busy_sleep+0x60>
+   408bc:	0007883a 	mov	r3,zero
+      /*
+      * Do NOT Try to single step the asm statement below 
+      * (single step will never return)
+      * Step out of this function or set a breakpoint after the asm statements
+      */
+      __asm__ volatile (
+   408c0:	01600034 	movhi	r5,32768
+   408c4:	297fffc4 	addi	r5,r5,-1
+        "\n1:"
+        "\n\t.pushsection .debug_alt_sim_info"
+        "\n\t.int 4, 0, 0b, 1b"
+        "\n\t.popsection"
+        :: "r" (INT_MAX));
+      us -= (INT_MAX/(ALT_CPU_FREQ/
+   408c8:	013999b4 	movhi	r4,58982
+   408cc:	211999c4 	addi	r4,r4,26215
+      /*
+      * Do NOT Try to single step the asm statement below 
+      * (single step will never return)
+      * Step out of this function or set a breakpoint after the asm statements
+      */
+      __asm__ volatile (
+   408d0:	297fffc4 	addi	r5,r5,-1
+   408d4:	283ffe1e 	bne	r5,zero,408d0 <_gp+0xffff7b88>
+  big_loops = us / (INT_MAX/
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+  {
+    for(i=0;i<big_loops;i++)
+   408d8:	18c00044 	addi	r3,r3,1
+        "\n1:"
+        "\n\t.pushsection .debug_alt_sim_info"
+        "\n\t.int 4, 0, 0b, 1b"
+        "\n\t.popsection"
+        :: "r" (INT_MAX));
+      us -= (INT_MAX/(ALT_CPU_FREQ/
+   408dc:	8121883a 	add	r16,r16,r4
+  big_loops = us / (INT_MAX/
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+  {
+    for(i=0;i<big_loops;i++)
+   408e0:	18bffb16 	blt	r3,r2,408d0 <_gp+0xffff7b88>
+      "\n\tbne %0,zero,0b"
+      "\n1:"
+      "\n\t.pushsection .debug_alt_sim_info"
+      "\n\t.int 4, 0, 0b, 1b"
+      "\n\t.popsection"
+      :: "r" (us*(ALT_CPU_FREQ/(cycles_per_loop * 1000000))));
+   408e4:	8009883a 	mov	r4,r16
+   408e8:	01400144 	movi	r5,5
+   408ec:	0040c080 	call	40c08 <__mulsi3>
+    /*
+    * Do NOT Try to single step the asm statement below 
+    * (single step will never return)
+    * Step out of this function or set a breakpoint after the asm statements
+    */
+    __asm__ volatile (
+   408f0:	10bfffc4 	addi	r2,r2,-1
+   408f4:	103ffe1e 	bne	r2,zero,408f0 <_gp+0xffff7ba8>
+   408f8:	00000506 	br	40910 <alt_busy_sleep+0x74>
+      "\n\tbgt %0,zero,0b"
+      "\n1:"
+      "\n\t.pushsection .debug_alt_sim_info"
+      "\n\t.int 4, 0, 0b, 1b"
+      "\n\t.popsection"
+      :: "r" (us*(ALT_CPU_FREQ/(cycles_per_loop * 1000000))));
+   408fc:	8009883a 	mov	r4,r16
+   40900:	01400144 	movi	r5,5
+   40904:	0040c080 	call	40c08 <__mulsi3>
+    /*
+    * Do NOT Try to single step the asm statement below 
+    * (single step will never return)
+    * Step out of this function or set a breakpoint after the asm statements
+    */
+    __asm__ volatile (
+   40908:	10bfffc4 	addi	r2,r2,-1
+   4090c:	00bffe16 	blt	zero,r2,40908 <_gp+0xffff7bc0>
+      "\n\t.popsection"
+      :: "r" (us*(ALT_CPU_FREQ/(cycles_per_loop * 1000000))));
+  }
+#endif /* #ifndef ALT_SIM_OPTIMIZE */
+  return 0;
+}
+   40910:	0005883a 	mov	r2,zero
+   40914:	dfc00117 	ldw	ra,4(sp)
+   40918:	dc000017 	ldw	r16,0(sp)
+   4091c:	dec00204 	addi	sp,sp,8
+   40920:	f800283a 	ret
+
+00040924 <alt_dcache_flush>:
+ *
+ * Any dirty lines in the data cache are written back to memory.
+ */
+
+void alt_dcache_flush (void* start, alt_u32 len)
+{
+   40924:	f800283a 	ret
+
+00040928 <alt_dev_llist_insert>:
+{
+  /*
+   * check that the device exists, and that it has a valid name.
+   */
+
+  if (!dev || !dev->name)
+   40928:	20000226 	beq	r4,zero,40934 <alt_dev_llist_insert+0xc>
+   4092c:	20800217 	ldw	r2,8(r4)
+   40930:	1000131e 	bne	r2,zero,40980 <alt_dev_llist_insert+0x58>
+
+extern int errno;
+
+static ALT_INLINE int* alt_get_errno(void)
+{
+  return ((alt_errno) ? alt_errno() : &errno);
+   40934:	00800134 	movhi	r2,4
+   40938:	10835504 	addi	r2,r2,3412
+   4093c:	10800017 	ldw	r2,0(r2)
+   40940:	10000926 	beq	r2,zero,40968 <alt_dev_llist_insert+0x40>
+/*
+ *
+ */
+
+int alt_dev_llist_insert (alt_dev_llist* dev, alt_llist* list)
+{
+   40944:	deffff04 	addi	sp,sp,-4
+   40948:	dfc00015 	stw	ra,0(sp)
+   4094c:	103ee83a 	callr	r2
+   * check that the device exists, and that it has a valid name.
+   */
+
+  if (!dev || !dev->name)
+  {
+    ALT_ERRNO = EINVAL;
+   40950:	00c00584 	movi	r3,22
+   40954:	10c00015 	stw	r3,0(r2)
+    return -EINVAL;
+   40958:	00bffa84 	movi	r2,-22
+   */
+  
+  alt_llist_insert(list, &dev->llist);
+
+  return 0;  
+}
+   4095c:	dfc00017 	ldw	ra,0(sp)
+   40960:	dec00104 	addi	sp,sp,4
+   40964:	f800283a 	ret
+   40968:	00800134 	movhi	r2,4
+   4096c:	10835b04 	addi	r2,r2,3436
+   * check that the device exists, and that it has a valid name.
+   */
+
+  if (!dev || !dev->name)
+  {
+    ALT_ERRNO = EINVAL;
+   40970:	00c00584 	movi	r3,22
+   40974:	10c00015 	stw	r3,0(r2)
+    return -EINVAL;
+   40978:	00bffa84 	movi	r2,-22
+   */
+  
+  alt_llist_insert(list, &dev->llist);
+
+  return 0;  
+}
+   4097c:	f800283a 	ret
+
+static ALT_INLINE void ALT_ALWAYS_INLINE alt_llist_insert(alt_llist* list, 
+                alt_llist* entry)
+{
+  entry->previous = list;
+  entry->next     = list->next;
+   40980:	28800017 	ldw	r2,0(r5)
+ */
+
+static ALT_INLINE void ALT_ALWAYS_INLINE alt_llist_insert(alt_llist* list, 
+                alt_llist* entry)
+{
+  entry->previous = list;
+   40984:	21400115 	stw	r5,4(r4)
+  entry->next     = list->next;
+   40988:	20800015 	stw	r2,0(r4)
+
+  list->next->previous = entry;
+   4098c:	28800017 	ldw	r2,0(r5)
+   40990:	11000115 	stw	r4,4(r2)
+  list->next           = entry;
+   40994:	29000015 	stw	r4,0(r5)
+   * register the device.
+   */
+  
+  alt_llist_insert(list, &dev->llist);
+
+  return 0;  
+   40998:	0005883a 	mov	r2,zero
+   4099c:	f800283a 	ret
+
+000409a0 <alt_flash_open_dev>:
+#include "priv/alt_file.h"
+
+ALT_LLIST_HEAD(alt_flash_dev_list);
+
+alt_flash_fd* alt_flash_open_dev(const char* name)
+{
+   409a0:	defffe04 	addi	sp,sp,-8
+  alt_flash_dev* dev = (alt_flash_dev*)alt_find_dev(name, &alt_flash_dev_list);
+   409a4:	d1600404 	addi	r5,gp,-32752
+#include "priv/alt_file.h"
+
+ALT_LLIST_HEAD(alt_flash_dev_list);
+
+alt_flash_fd* alt_flash_open_dev(const char* name)
+{
+   409a8:	dc000015 	stw	r16,0(sp)
+   409ac:	dfc00115 	stw	ra,4(sp)
+   409b0:	2021883a 	mov	r16,r4
+  alt_flash_dev* dev = (alt_flash_dev*)alt_find_dev(name, &alt_flash_dev_list);
+   409b4:	0040a0c0 	call	40a0c <alt_find_dev>
+
+  if ((dev) && dev->open)
+   409b8:	10000826 	beq	r2,zero,409dc <alt_flash_open_dev+0x3c>
+   409bc:	10c00317 	ldw	r3,12(r2)
+   409c0:	18000726 	beq	r3,zero,409e0 <alt_flash_open_dev+0x40>
+  {
+    return dev->open(dev, name);
+   409c4:	1009883a 	mov	r4,r2
+   409c8:	800b883a 	mov	r5,r16
+  }
+
+  return dev;
+}
+   409cc:	dfc00117 	ldw	ra,4(sp)
+   409d0:	dc000017 	ldw	r16,0(sp)
+   409d4:	dec00204 	addi	sp,sp,8
+{
+  alt_flash_dev* dev = (alt_flash_dev*)alt_find_dev(name, &alt_flash_dev_list);
+
+  if ((dev) && dev->open)
+  {
+    return dev->open(dev, name);
+   409d8:	1800683a 	jmp	r3
+   409dc:	0005883a 	mov	r2,zero
+  }
+
+  return dev;
+}
+   409e0:	dfc00117 	ldw	ra,4(sp)
+   409e4:	dc000017 	ldw	r16,0(sp)
+   409e8:	dec00204 	addi	sp,sp,8
+   409ec:	f800283a 	ret
+
+000409f0 <alt_flash_close_dev>:
+
+void alt_flash_close_dev(alt_flash_fd* fd)
+{
+  if (fd && fd->close)
+   409f0:	20000326 	beq	r4,zero,40a00 <alt_flash_close_dev+0x10>
+   409f4:	20800417 	ldw	r2,16(r4)
+   409f8:	10000126 	beq	r2,zero,40a00 <alt_flash_close_dev+0x10>
+  {
+    fd->close(fd);
+   409fc:	1000683a 	jmp	r2
+   40a00:	f800283a 	ret
+
+00040a04 <altera_nios2_gen2_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_gen2_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+   40a04:	000170fa 	wrctl	ienable,zero
+   40a08:	f800283a 	ret
+
+00040a0c <alt_find_dev>:
+ * "name" must be an exact match for the devices registered name for a match to
+ * be found.
+ */
+ 
+alt_dev* alt_find_dev(const char* name, alt_llist* llist)
+{
+   40a0c:	defffb04 	addi	sp,sp,-20
+   40a10:	dcc00315 	stw	r19,12(sp)
+   40a14:	dc800215 	stw	r18,8(sp)
+   40a18:	dc400115 	stw	r17,4(sp)
+   40a1c:	dc000015 	stw	r16,0(sp)
+   40a20:	dfc00415 	stw	ra,16(sp)
+   40a24:	2025883a 	mov	r18,r4
+   40a28:	2823883a 	mov	r17,r5
+  alt_dev* next = (alt_dev*) llist->next;
+   40a2c:	2c000017 	ldw	r16,0(r5)
+  alt_32 len;
+
+  len  = strlen(name) + 1;
+   40a30:	0040ad80 	call	40ad8 <strlen>
+   40a34:	14c00044 	addi	r19,r2,1
+  /*
+   * Check each list entry in turn, until a match is found, or we reach the
+   * end of the list (i.e. next winds up pointing back to the list head).
+   */ 
+
+  while (next != (alt_dev*) llist)
+   40a38:	84400726 	beq	r16,r17,40a58 <alt_find_dev+0x4c>
+    /* 
+     * memcmp() is used here rather than strcmp() in order to reduce the size
+     * of the executable.
+     */
+
+    if (!memcmp (next->name, name, len))
+   40a3c:	81000217 	ldw	r4,8(r16)
+   40a40:	900b883a 	mov	r5,r18
+   40a44:	980d883a 	mov	r6,r19
+   40a48:	0040a800 	call	40a80 <memcmp>
+   40a4c:	10000426 	beq	r2,zero,40a60 <alt_find_dev+0x54>
+    {
+      /* match found */
+
+      return next;
+    }
+    next = (alt_dev*) next->llist.next;
+   40a50:	84000017 	ldw	r16,0(r16)
+   40a54:	003ff806 	br	40a38 <_gp+0xffff7cf0>
+  }
+  
+  /* No match found */
+  
+  return NULL;
+   40a58:	0005883a 	mov	r2,zero
+   40a5c:	00000106 	br	40a64 <alt_find_dev+0x58>
+   40a60:	8005883a 	mov	r2,r16
+}
+   40a64:	dfc00417 	ldw	ra,16(sp)
+   40a68:	dcc00317 	ldw	r19,12(sp)
+   40a6c:	dc800217 	ldw	r18,8(sp)
+   40a70:	dc400117 	ldw	r17,4(sp)
+   40a74:	dc000017 	ldw	r16,0(sp)
+   40a78:	dec00504 	addi	sp,sp,20
+   40a7c:	f800283a 	ret
+
+00040a80 <memcmp>:
+   40a80:	218d883a 	add	r6,r4,r6
+   40a84:	21800826 	beq	r4,r6,40aa8 <memcmp+0x28>
+   40a88:	20c00003 	ldbu	r3,0(r4)
+   40a8c:	28800003 	ldbu	r2,0(r5)
+   40a90:	18800226 	beq	r3,r2,40a9c <memcmp+0x1c>
+   40a94:	1885c83a 	sub	r2,r3,r2
+   40a98:	f800283a 	ret
+   40a9c:	21000044 	addi	r4,r4,1
+   40aa0:	29400044 	addi	r5,r5,1
+   40aa4:	003ff706 	br	40a84 <_gp+0xffff7d3c>
+   40aa8:	0005883a 	mov	r2,zero
+   40aac:	f800283a 	ret
+
+00040ab0 <memcpy>:
+   40ab0:	2005883a 	mov	r2,r4
+   40ab4:	0007883a 	mov	r3,zero
+   40ab8:	19800626 	beq	r3,r6,40ad4 <memcpy+0x24>
+   40abc:	28c9883a 	add	r4,r5,r3
+   40ac0:	21c00003 	ldbu	r7,0(r4)
+   40ac4:	10c9883a 	add	r4,r2,r3
+   40ac8:	18c00044 	addi	r3,r3,1
+   40acc:	21c00005 	stb	r7,0(r4)
+   40ad0:	003ff906 	br	40ab8 <_gp+0xffff7d70>
+   40ad4:	f800283a 	ret
+
+00040ad8 <strlen>:
+   40ad8:	2005883a 	mov	r2,r4
+   40adc:	10c00007 	ldb	r3,0(r2)
+   40ae0:	18000226 	beq	r3,zero,40aec <strlen+0x14>
+   40ae4:	10800044 	addi	r2,r2,1
+   40ae8:	003ffc06 	br	40adc <_gp+0xffff7d94>
+   40aec:	1105c83a 	sub	r2,r2,r4
+   40af0:	f800283a 	ret
+
+00040af4 <udivmodsi4>:
+   40af4:	2900182e 	bgeu	r5,r4,40b58 <udivmodsi4+0x64>
+   40af8:	28001716 	blt	r5,zero,40b58 <udivmodsi4+0x64>
+   40afc:	00800804 	movi	r2,32
+   40b00:	00c00044 	movi	r3,1
+   40b04:	00000206 	br	40b10 <udivmodsi4+0x1c>
+   40b08:	10001126 	beq	r2,zero,40b50 <udivmodsi4+0x5c>
+   40b0c:	28000516 	blt	r5,zero,40b24 <udivmodsi4+0x30>
+   40b10:	294b883a 	add	r5,r5,r5
+   40b14:	10bfffc4 	addi	r2,r2,-1
+   40b18:	18c7883a 	add	r3,r3,r3
+   40b1c:	293ffa36 	bltu	r5,r4,40b08 <_gp+0xffff7dc0>
+   40b20:	18000b26 	beq	r3,zero,40b50 <udivmodsi4+0x5c>
+   40b24:	0005883a 	mov	r2,zero
+   40b28:	21400236 	bltu	r4,r5,40b34 <udivmodsi4+0x40>
+   40b2c:	2149c83a 	sub	r4,r4,r5
+   40b30:	10c4b03a 	or	r2,r2,r3
+   40b34:	1806d07a 	srli	r3,r3,1
+   40b38:	280ad07a 	srli	r5,r5,1
+   40b3c:	183ffa1e 	bne	r3,zero,40b28 <_gp+0xffff7de0>
+   40b40:	3000011e 	bne	r6,zero,40b48 <udivmodsi4+0x54>
+   40b44:	f800283a 	ret
+   40b48:	2005883a 	mov	r2,r4
+   40b4c:	f800283a 	ret
+   40b50:	0005883a 	mov	r2,zero
+   40b54:	003ffa06 	br	40b40 <_gp+0xffff7df8>
+   40b58:	00c00044 	movi	r3,1
+   40b5c:	0005883a 	mov	r2,zero
+   40b60:	003ff106 	br	40b28 <_gp+0xffff7de0>
+
+00040b64 <__divsi3>:
+   40b64:	deffff04 	addi	sp,sp,-4
+   40b68:	dfc00015 	stw	ra,0(sp)
+   40b6c:	20000916 	blt	r4,zero,40b94 <__divsi3+0x30>
+   40b70:	000f883a 	mov	r7,zero
+   40b74:	28000a16 	blt	r5,zero,40ba0 <__divsi3+0x3c>
+   40b78:	000d883a 	mov	r6,zero
+   40b7c:	0040af40 	call	40af4 <udivmodsi4>
+   40b80:	38000126 	beq	r7,zero,40b88 <__divsi3+0x24>
+   40b84:	0085c83a 	sub	r2,zero,r2
+   40b88:	dfc00017 	ldw	ra,0(sp)
+   40b8c:	dec00104 	addi	sp,sp,4
+   40b90:	f800283a 	ret
+   40b94:	0109c83a 	sub	r4,zero,r4
+   40b98:	01c00044 	movi	r7,1
+   40b9c:	283ff60e 	bge	r5,zero,40b78 <_gp+0xffff7e30>
+   40ba0:	014bc83a 	sub	r5,zero,r5
+   40ba4:	39c0005c 	xori	r7,r7,1
+   40ba8:	003ff306 	br	40b78 <_gp+0xffff7e30>
+
+00040bac <__modsi3>:
+   40bac:	20000316 	blt	r4,zero,40bbc <__modsi3+0x10>
+   40bb0:	28000c16 	blt	r5,zero,40be4 <__modsi3+0x38>
+   40bb4:	01800044 	movi	r6,1
+   40bb8:	0040af41 	jmpi	40af4 <udivmodsi4>
+   40bbc:	deffff04 	addi	sp,sp,-4
+   40bc0:	dfc00015 	stw	ra,0(sp)
+   40bc4:	0109c83a 	sub	r4,zero,r4
+   40bc8:	28000916 	blt	r5,zero,40bf0 <__modsi3+0x44>
+   40bcc:	01800044 	movi	r6,1
+   40bd0:	0040af40 	call	40af4 <udivmodsi4>
+   40bd4:	0085c83a 	sub	r2,zero,r2
+   40bd8:	dfc00017 	ldw	ra,0(sp)
+   40bdc:	dec00104 	addi	sp,sp,4
+   40be0:	f800283a 	ret
+   40be4:	014bc83a 	sub	r5,zero,r5
+   40be8:	01800044 	movi	r6,1
+   40bec:	0040af41 	jmpi	40af4 <udivmodsi4>
+   40bf0:	014bc83a 	sub	r5,zero,r5
+   40bf4:	003ff506 	br	40bcc <_gp+0xffff7e84>
+
+00040bf8 <__udivsi3>:
+   40bf8:	000d883a 	mov	r6,zero
+   40bfc:	0040af41 	jmpi	40af4 <udivmodsi4>
+
+00040c00 <__umodsi3>:
+   40c00:	01800044 	movi	r6,1
+   40c04:	0040af41 	jmpi	40af4 <udivmodsi4>
+
+00040c08 <__mulsi3>:
+   40c08:	0005883a 	mov	r2,zero
+   40c0c:	20000726 	beq	r4,zero,40c2c <__mulsi3+0x24>
+   40c10:	20c0004c 	andi	r3,r4,1
+   40c14:	2008d07a 	srli	r4,r4,1
+   40c18:	18000126 	beq	r3,zero,40c20 <__mulsi3+0x18>
+   40c1c:	1145883a 	add	r2,r2,r5
+   40c20:	294b883a 	add	r5,r5,r5
+   40c24:	203ffa1e 	bne	r4,zero,40c10 <_gp+0xffff7ec8>
+   40c28:	f800283a 	ret
+   40c2c:	f800283a 	ret
